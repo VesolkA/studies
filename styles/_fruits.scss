@@ -1,0 +1,237 @@
+@import './var';
+
+.fruits {
+    padding-top: 130px;
+    padding-bottom: 150px;
+    background: #F9F8F8;
+    .container {
+        max-width: 1440px;
+        margin: 0 auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__textblock {
+        max-width: 675px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__aboutus {
+        p {
+            color: $green;
+            font-family: 'Yellowtail';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 64.8px;
+            letter-spacing: 0.36px;
+            text-transform: capitalize;
+        }
+        h2 {
+            max-width: 520px;
+            color: $greendark;
+            font-family: 'RobotoRegular';
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 58.5px; 
+            letter-spacing: 0.36px;
+            text-transform: capitalize;
+            margin-bottom: 22px;
+        }
+        span {
+            color: $gray;
+            font-family: 'OpenSansRegular';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32.4px; 
+            letter-spacing: 0.36px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__logoleaf, 
+    &__postampt {
+        width: 100px;
+        height: 100px;
+        display: flex;
+    }
+    &__organic, 
+    &__standarts {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        span {
+            max-width: 552px;
+        }
+        h6 { 
+            color: $greendark;
+            font-family: 'RobotoRegular';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 35px; 
+            letter-spacing: 0.36px;
+            margin-bottom: 9px;
+        }
+        p {
+            color: $gray;
+            font-family: 'OpenSansREgular';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32.4px; 
+            letter-spacing: 0.36px;
+        }
+    }
+    &__shopnow {
+        width: 199px;
+        height: 82px;
+        border: none;
+        background-color: $greendark;
+        border-radius: 16px;
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 25px;
+        span {
+            color: $white;
+            font-family: 'RobotoRegular';
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0.36px;
+            text-transform: capitalize;
+            transition: .3s ease;
+        }
+        &:before {
+            transform: scale(1.01);
+            background-color: $yellow;
+            transition: .3s ease;
+        }
+        &:hover {
+            transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            transition: .3s ease;
+            background-color: $green;
+            font-weight: 900;
+        }
+        &:hover::after {
+            opacity: 1;
+            transition: 0.5s;
+        }
+        &:active {
+            background: $orange;
+        }
+    }
+    &__arrow {
+        border-radius: 100px;
+        background: $greendark2;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        &:before {
+            transform: scale(1.1);
+            transition: .5s ease;
+        }
+        &:hover {
+            transform: scale(1.1);
+            background: $yellow;
+            transition: .5s ease;
+        }
+        &:active {
+            background: $green;
+            transition: .5s ease;
+        }
+    }
+}
+@media only screen and (max-width: 1420px) {
+    .fruits {
+        .container {
+        gap: 0px;
+        }  
+        &__textblock {
+            padding-right: 20px;
+        }
+        &__photo {
+            display: flex;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .fruits {
+        padding-top: 30px;
+        .container {
+            flex-direction: column;
+        }
+        &__textblock {
+            padding-right: 0px;
+            text-align: center;
+        }
+        &__aboutus {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__blocks {
+            align-items: center;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .fruits {
+        &__photo {
+            max-width: 80%;
+        }
+        &__textblock {
+            max-width: 600px;
+        }
+    }
+}
+@media only screen and (max-width:960px) {
+    .fruits {
+        &__aboutus h2 {
+            font-size: 40px;
+        }
+    }
+}
+@media only screen and (max-width:760px) {
+    .fruits {
+        overflow: hidden;
+        &__textblock {
+            max-width: 500px;
+        }
+    }
+}
+@media only screen and (max-width:580px) {
+    .fruits {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 80px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .fruits {
+        &__aboutus h2 {
+            font-size: 34px;
+            max-width: 330px;
+        }
+        &__organic,
+        &__standarts {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+}

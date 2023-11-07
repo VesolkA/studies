@@ -1,0 +1,118 @@
+@import './var';
+
+.subscribe {
+    max-width: 1440px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    .container {
+        max-width: 1380px;
+        background-image: url(../img/subscribe.png);
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    &__block {
+        height: 320px;
+        padding-left: 70px;
+        padding-right: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            max-width: 333px;
+            color: #FFF;
+            font-family: 'RobotoBold';
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px; 
+            letter-spacing: 0.36px;
+            text-transform: capitalize;
+        }
+    }
+    &__input { 
+        width: 350px;
+        height: 79px;
+        margin-right: 10px;
+        border-radius: 16px;
+        border: 1px solid #CCC;
+        background: #FFF;
+        &::placeholder {
+            color: $gray;
+            font-family: 'OpenSansRegular';
+            padding-left: 30px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28.8px;
+            letter-spacing: 0.36px;
+        }
+    }
+}
+@media only screen and (max-width:1440px) {
+    .subscribe {
+        .container {
+            border-radius: 0px;
+        }
+    }
+}
+@media only screen and (max-width:1050px) {
+    .subscribe {
+        &__block {
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            h2 {
+                max-width: 600px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:760px) {
+    .subscribe {
+        overflow: hidden;
+        &__block {
+            gap: 10px;
+            h2 {
+            font-size: 40px;
+        }
+        }
+        &__in {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        &__input {
+            margin-right: 0px;
+            max-width: 300px;
+            height: 60px;
+        }
+    }
+}
+@media only screen and (max-width:640px) {
+    .subscribe {
+        &__block {
+            text-align: center;
+            h2 {
+                font-size: 36px;
+                max-width: 300px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:390px) {
+    .subscribe {
+        &__block {
+            h2  {
+                font-size: 30px;
+            }
+        }
+        &__input {
+            max-width: 260px;
+            height: 50px;
+        }
+    }
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Organic Landing Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+<style>
+    @font-face {
+        font-family: 'OpenSansBold';
+        src: url(./fonts/OpenSans-Bold.ttf);
+    }
+    @font-face {
+        font-family: 'OpenSansRegular';
+        src: url(./fonts/OpenSans-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'RobotoBold';
+        src: url(./fonts/Roboto-Bold.ttf);
+    }
+    @font-face {
+        font-family: 'RobotoRegular';
+        src: url(./fonts/Roboto-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'Yellowtail';
+        src: url(./fonts/Yellowtail-Regular.ttf);
+    }
+</style>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__top">
+            <div class="header__logotype">
+            <div class="header__cart">
+                <a href="#"><img src="./img/LOGO.png" alt="logotype" class="header__logo"></a> 
+                <button class="header__button" style="cursor: pointer;" id="cart0">
+                    <div class="header__basket" id="basket">
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_34)">
+                        <path id="Vector" d="M10.7779 23.0001C11.4529 23.0001 12.0001 22.4529 12.0001 21.7779C12.0001 21.1029 11.4529 20.5557 10.7779 20.5557C10.1029 20.5557 9.55566 21.1029 9.55566 21.7779C9.55566 22.4529 10.1029 23.0001 10.7779 23.0001Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_2" d="M19.3336 23.0001C20.0086 23.0001 20.5558 22.4529 20.5558 21.7779C20.5558 21.1029 20.0086 20.5557 19.3336 20.5557C18.6585 20.5557 18.1113 21.1029 18.1113 21.7779C18.1113 22.4529 18.6585 23.0001 19.3336 23.0001Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_3" d="M1 1H4.7819L7.61832 17.0731H22.7459" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Vector_4" d="M7.11121 13.1837L22.3584 13.2907C22.4677 13.2908 22.5737 13.2529 22.6583 13.1837C22.7429 13.1144 22.8008 13.0179 22.8223 12.9107L24.5241 4.40145C24.5378 4.33283 24.5362 4.26203 24.5192 4.19414C24.5023 4.12625 24.4705 4.06297 24.4261 4.00886C24.3817 3.95476 24.3259 3.91118 24.2626 3.88128C24.1993 3.85138 24.1302 3.83589 24.0602 3.83594H5.56738" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <!-- <defs>
+                        <clipPath id="clip0_1_34">
+                        <rect width="26" height="24" fill="white"/>
+                        </clipPath>
+                        </defs> -->
+                    </svg>
+                    </div> <span>Cart 0</span>
+                </button>
+            </div>
+            <nav class="header__nav">
+            <ul>
+                <a href="#header"><li>Home</li></a>
+                <a href="#aboutus"><li>About Us</li></a>
+                <a href="#products"><li>Shop</li></a>
+                <a href="#articles"><li>Pages</li></a>
+                <a href="#contacts"><li>Contact Us</li></a>
+            </ul>
+            </nav>    
+            </div>
+        <button class="header__button" style="cursor: pointer;" id="cart">
+            <div class="header__basket" id="basket2">
+                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_34)">
+                <path id="Vector_0" d="M10.7779 23.0001C11.4529 23.0001 12.0001 22.4529 12.0001 21.7779C12.0001 21.1029 11.4529 20.5557 10.7779 20.5557C10.1029 20.5557 9.55566 21.1029 9.55566 21.7779C9.55566 22.4529 10.1029 23.0001 10.7779 23.0001Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_1" d="M19.3336 23.0001C20.0086 23.0001 20.5558 22.4529 20.5558 21.7779C20.5558 21.1029 20.0086 20.5557 19.3336 20.5557C18.6585 20.5557 18.1113 21.1029 18.1113 21.7779C18.1113 22.4529 18.6585 23.0001 19.3336 23.0001Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_5" d="M1 1H4.7819L7.61832 17.0731H22.7459" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_6" d="M7.11121 13.1837L22.3584 13.2907C22.4677 13.2908 22.5737 13.2529 22.6583 13.1837C22.7429 13.1144 22.8008 13.0179 22.8223 12.9107L24.5241 4.40145C24.5378 4.33283 24.5362 4.26203 24.5192 4.19414C24.5023 4.12625 24.4705 4.06297 24.4261 4.00886C24.3817 3.95476 24.3259 3.91118 24.2626 3.88128C24.1993 3.85138 24.1302 3.83589 24.0602 3.83594H5.56738" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <!-- <defs>
+                <clipPath id="clip0_1_34">
+                <rect width="26" height="24" fill="white"/>
+                </clipPath>
+                </defs> -->
+            </svg>
+            </div> <span>Cart 0</span>
+        </button>
+        </div>
+        <div class="header__wrap">
+        <div class="header__bottom">
+        <p>Made with nature</p>
+        <h1 class="header__title">Welcome to the world of nature and organic.</h1>
+        <button class="header__explorebutton" style="cursor: pointer;" id="explore">
+            <span>Explore Now</span>
+            <div class="header__arrow">
+                <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0384 6.50003H1M9.07688 1L16 6.50003L9.07688 12V1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </div>
+        </button>
+    </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="offer">
+        <div class="container">
+            <div class="offer__natural">
+                <p>Natural!!</p>
+                <h5>Get Garden Fresh Fruits</h5>
+            </div>
+            <div class="offer__offer">
+                <p>Offer!!</p>
+                <h5>Get 10% off on Vegetables</h5>
+            </div>
+        </div>
+    </section>
+    <section class="fruits" id="aboutus">
+        <div class="container">
+            <img class="fruits__photo" src="./img/fruits.png" alt="fruits">
+            <div class="fruits__textblock">
+            <div class="fruits__aboutus">
+                <p>About Us</p>
+                <h2>We Believe in Organic Foods For Strong Health</h2>
+                <span>Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition.</span>
+            </div>
+            <div class="fruits__blocks">
+                <div class="fruits__organic">
+                    <div class="fruits__logoleaf"><img src="./img/Frameleaf.png" alt="greenleaf"></div>
+                    <span>
+                    <h6>Organic Foods Only</h6>
+                    <p>The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
+                    </span>
+                    
+                </div>
+                <div class="fruits__standarts">
+                    <div class="fruits__postampt"><img src="./img/Framepostampt.png" alt="postampt"></div>
+                    <span>
+                    <h6>Quality Standarts</h6>
+                    <p>Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.</p>   
+                    </span>
+                </div>
+                <button class="fruits__shopnow" style="cursor: pointer;" id="shopnow">
+                    <span>Shop now</span>
+                    <div class="fruits__arrow">
+                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0384 6.50003H1M9.07688 1L16 6.50003L9.07688 12V1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                          
+                    </div>
+                </button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <div class="container">
+        <div class="products__title">
+                <p>Organic</p>
+                <h2>Our Products</h2>
+        </div>
+        <div class="products__wrap">
+        <div class="products__items">
+            <div class="products__block">
+                <div class="products__mark"><span>Vegetable</span></div>
+                <img src="./img/item1.png" alt="broccoli" class="products__img">
+            </div>
+            <div class="products__textblock">
+                <h5 class="products__name">Calabrese Broccoli</h5>
+                <div class="products__price">
+                    <div class="products__blockprice">
+                    <span class="price1">$ 25.00 USD</span>
+                    <span class="price2">$ 21.00 USD</span>   
+                    </div>
+                    <img src="./img/stars.png" alt="stars" class="stars">
+                </div>
+            </div>
+        </div>
+        <div class="products__items">
+            <div class="products__block">
+                <div class="products__mark"><span>Vegetable</span></div>
+                <img src="./img/item2.png" alt="corn" class="products__img">
+            </div>
+            <div class="products__textblock">
+                <h5 class="products__name">Fresh Corn</h5>
+                <div class="products__price">
+                    <div class="products__blockprice">
+                        <span class="price1">$ 21.23 USD</span>
+                        <span class="price2">$ 18.00 USD</span>    
+                    </div>
+                    <img src="./img/stars.png" alt="stars" class="stars">
+                </div>
+            </div>
+        </div>
+        <div class="products__items">
+            <div class="products__block">
+                <div class="products__mark"><span>Mill</span></div>
+                <img src="./img/item3.png" alt="mill" class="products__img">
+            </div>
+            <div class="products__textblock">
+                <h5 class="products__name">Dried Pistachio</h5>
+                <div class="products__price">
+                    <div class="products__blockprice">
+                        <span class="price1">$ 61.00 USD</span>
+                        <span class="price2">$ 48.00 USD</span>
+                    </div>
+                    <img src="./img/stars.png" alt="stars" class="stars">
+                </div>
+            </div>
+        </div>
+        <div class="products__items">
+            <div class="products__block">
+                <div class="products__mark"><span>Vegetable</span></div>
+                <img src="./img/item4.png" alt="tomato" class="products__img">
+            </div>
+            <div class="products__textblock">
+                <h5 class="products__name">Vegan Red Tomato</h5>
+                <div class="products__price">
+                    <div class="products__blockprice">
+                        <span class="price1">$ 14.00 USD</span>
+                        <span class="price2">$ 9.37 USD</span>
+                    </div>
+                    <img src="./img/stars.png" alt="stars" class="stars">
+                </div>
+            </div>
+        </div>
+        <div class="products__items">
+            <div class="products__block">
+                    <div class="products__mark"><span>Fruits</span></div>
+                <img src="./img/item5.png" alt="almonds" class="products__img">
+            </div>
+            <div class="products__textblock">
+                <h5 class="products__name">Organic Almonds</h5>
+                <div class="products__price">
+                    <div class="products__blockprice">
+                        <span class="price1">$ 21.00 USD</span>
+                        <span class="price2">$ 18.00 USD</span>
+                    </div>
+                    <img src="./img/stars.png" alt="stars" class="stars">
+                </div>
+            </div>
+        </div>
+        <div class="products__items">
+            <div class="products__block">
+                <div class="products__mark"><span>Mill</span></div>
+                <img src="./img/item6.png" alt="hazelnut" class="products__img">
+            </div>
+            <div class="products__textblock">
+                <h5 class="products__name">Brown Hazelnut</h5>
+                <div class="products__price">
+                    <div class="products__blockprice">
+                    <span class="price1">$ 43.00 USD</span>
+                    <span class="price2">$ 34.00 USD</span>
+                    </div>
+                    <img src="./img/stars.png" alt="stars" class="stars">
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <div class="review__top">
+                <div class="review__title">
+                    <p>Testimonial</p>
+                    <h2>What Our Customer Saying?</h2>
+                </div>
+            </div>
+            <div class="review__bottom">
+                <div class="review__customer">
+                    <div class="review__logo">
+                        <img src="./img/customer.png" alt="customer" class="customerlogo">
+                        <img src="./img/stars2.png" alt="stars2" class="stars2">
+                    </div>
+                    <div class="review__text">
+                        <p>The quality of organic produce is extremely high, the service is second to none and the taste of the food takes me back to my childhood when we were growing our own.</p>
+                        <h3>Sara Taylor</h3>
+                        <span>Consumer</span>
+                    </div>
+                </div>
+                <div class="review__line"></div>
+                <div class="review__says">
+                    <div class="review__rounds">
+                        <div class="review__circle">
+                            <h2>100%</h2>
+                            <p>Organic</p>
+                        </div>
+                    </div>
+                    <div class="review__rounds">
+                        <div class="review__circle">
+                            <h2>285</h2>
+                            <p>Active Product</p>
+                        </div>
+                    </div>
+                    <div class="review__rounds">
+                        <div class="review__circle">
+                            <h2>385+</h2>
+                            <p>Organic Orchads</p>
+                        </div>
+                    </div>
+                    <div class="review__rounds">
+                        <div class="review__circle">
+                            <h2>25+</h2>
+                            <p>Tears of Farming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blue">
+        <div class="container">
+            <div class="blue__top">
+                <div class="blue__title">
+                    <p>Offer Products</p>
+                    <h3>We Offer Organic for You</h3>
+                </div>
+                <button class="blue__button" style="cursor: pointer;" id="allproducts">
+                    <span>View All Products</span>
+                    <div class="blue__arrow">
+                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0384 6.50003H1M9.07688 1L16 6.50003L9.07688 12V1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
+                </button>    
+            </div>
+            <div class="blue__products">
+                <div class="products__items">
+                    <div class="products__block">
+                        <div class="products__mark"><span>Vegetable</span></div>
+                        <img src="./img/item4.png" alt="tomato" class="products__img">
+                    </div>
+                    <div class="products__textblock">
+                        <h5 class="products__name">Vegan Red Tomato</h5>
+                        <div class="products__price">
+                            <div class="products__blockprice">
+                                <span class="price1">$ 14.00 USD</span>
+                                <span class="price2">$ 9.37 USD</span>
+                            </div>
+                            <img src="./img/stars.png" alt="stars" class="stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="products__items">
+                    <div class="products__block">
+                            <div class="products__mark" id="frucard"><span>Fruits</span></div>
+                        <img src="./img/item5.png" alt="almonds" class="products__img">
+                    </div>
+                    <div class="products__textblock">
+                        <h5 class="products__name">Organic Almonds</h5>
+                        <div class="products__price">
+                            <div class="products__blockprice">
+                                <span class="price1">$ 21.00 USD</span>
+                                <span class="price2">$ 18.00 USD</span>
+                            </div>
+                            <img src="./img/stars.png" alt="stars" class="stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="products__items">
+                    <div class="products__block">
+                        <div class="products__mark" id="vegcard"><span>Vegetable</span></div>
+                        <img src="./img/item2.png" alt="corn" class="products__img">
+                    </div>
+                    <div class="products__textblock">
+                        <h5 class="products__name">Fresh Corn</h5>
+                        <div class="products__price">
+                            <div class="products__blockprice">
+                                <span class="price1">$ 21.23 USD</span>
+                                <span class="price2">$ 18.00 USD</span>    
+                            </div>
+                            <img src="./img/stars.png" alt="stars" class="stars">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="friendly">
+        <div class="container">
+            <div class="friendly__block">
+                <div class="friendly__top">
+                    <p>Eco Friendly</p>
+                    <h2>From our Farm to your Home.</h2>
+                </div>
+                <div class="friendly__bottom">
+                        <div class="friendly__group">
+                        <h6>Choose Your Products</h6>
+                        <p>In our listing, we have several collections of organic products. This is the place where you need to choose the product you want.</p>
+                    </div>
+                    <div class="friendly__group">
+                        <h6>Farmers will produce it</h6>
+                        <p>The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
+                    </div>
+                    <div class="friendly__group">
+                        <h6>We Can Delivery too</h6>
+                        <p>If you are not comfortable going to the nearby market place we also will deliver your product to your doorstep.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="articles__block">
+                <div class="articles__tag"><p>Fruit Juice</p></div>
+            </div>
+            <div class="articles__block">
+                <div class="articles__tag"><p>Organic Food</p></div>
+            </div>
+            <div class="articles__block">
+                <div class="articles__tag"><p>Nuts Cookies</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__block">
+                <h2>Subscribe our Newsletter</h2>
+                <div class="subscribe__in">
+                <input type="email" placeholder="Enter your email address" maxlength="300px" class="subscribe__input">
+                <button class="fruits__shopnow" style="cursor: pointer;" id="">
+                    <span>Subscribe</span>
+                    <div class="fruits__arrow">
+                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0384 6.50003H1M9.07688 1L16 6.50003L9.07688 12V1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                          
+                    </div>
+                </button>
+                </div>
+        </div>
+    </div>
+    </section>
+    <section class="contacts" id="contacts">
+            <div class="container" id="contacts-container">
+                <div class="contacts__left" id="left">
+                    <h5>Contact Us</h5>
+                    <div class="contacts__block">
+                        <span>Email</span>
+                        <p>needhelp@organick.com</p>
+                    </div>
+                    <div class="contacts__block">
+                        <span>Phone</span>
+                        <p>123 (1254) 1452</p>
+                    </div>
+                    <div class="contacts__block">
+                        <span>Address</span>
+                        <p>88 Road, Brooklyn Street, USA</p>
+                    </div>
+                </div>
+                <div class="contacts__center" id="center">
+                    <a href="#"><img src="./img/LOGO.png" alt="logotype" class="header__logo"></a>
+                    <p>We are a popular and farming company aspiring to be a leader in the Organic food industry.</p>
+                    <div class="contacts__social">
+                        <div class="contacts__circle">
+                            <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
+                        </div>
+                        <div class="contacts__circle">
+                        <a href="#"><img src="./img/twitter.png" alt="facebook"></a>
+                        </div>
+                        <div class="contacts__circle">
+                            <a href="#"><img src="./img/insta.png" alt="facebook"></a>
+                        </div>
+                        <div class="contacts__circle">
+                            <a href="#"><img src="./img/pin.png" alt="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__right" id="right">
+                    <h5>Utility Pages</h5>
+                    <ul class="contacts__list">
+                        <a href="#"><li><p>Style Guide</p></li></a>
+                        <a href="#"><li><p>Protected</p></li></a>
+                        <a href="#"><li><p>Page Not Found</p></li></a>
+                        <a href="#"><li><p>Changelog</p></li></a>
+                        <a href="#"><li><p>Licenses</p></li></a>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <section class="map">
+        <div class="container"></div>
+    </section>
+</main>    
+</body>
+
+</html>
