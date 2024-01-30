@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <script src="./script1.js"></script>
+</head>
+<style>
+    .block {
+        width: 1000px;
+        height: auto;
+        margin: 50px auto;
+        background: rgba(248, 248, 248, 0.247);
+        border-radius: 25px;
+    }
+</style>
+<body>
+<div class="block">
+<h3>Задание 1</h3>
+        <script>
+        document.write(`Меня зовут ${name}. Мне ${age} лет. Я проживаю в городе ${city} и работаю в компании ${company}. Мои контактные данные: ${phone}, ${email}.`);
+        </script>
+
+<h3>Задание 2</h3>
+        <script>
+            document.write(`${name} родился(лась) в ${datebthd} году.`);
+        </script>
+
+<h3>Задание 3</h3>
+    <p><b>Дано:</b>Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.</p>
+        <p><b>Ответ:</b></p>
+        <script>
+            const $str = prompt('Введите числовой ряд из 6 чисел','123654')
+            if (($str[0]+$str[1]+$str[2]) == ($str[3]+$str[4]+$str[5])) {
+            document.write ('Да, сумма цифр равна');
+            }else {
+            document.write ('Нет, сумма не равна');
+            }
+        </script>
+
+<h3>Задание 4</h3>
+    <p>Если переменная <b>a</b> больше нуля, то выведите <b>'Верно'</b>, иначе выведите <b>'Неверно'</b>. Проверьте работу скрипта при <b>a</b>, равном <b>1, 0, -3</b>.</p>
+    <p><b>Ответ:</b></p>
+        <script>
+            let check = (a) => document.write (a === 0 ? 'Верно' : 'Неверно');
+            check(1);  
+        </script>
+        <script>check(0);</script>
+        <script>check(-3);</script>
+
+<h3>Задание 5</h3>
+    <p>Создайте переменные <b>a=10</b> и <b>b=2</b>. Выведите их сумму, разность, произведение, частное, а также, если сумма этих чисел больше 1, то возведите полученную сумму в квадрат.</p>
+    <p><b>Ответ:</b></p>
+        <script>
+            let a = 10;
+            let b = 2;
+            let sum = ( a + b );
+            let raz = ( a - b );
+            let proiz = ( a * b );
+            let chasnoe = ( a / b );
+            let kvad = ( sum ** 2 );
+            document.write (`a+b = ${sum},  a-b = ${raz},  a*b = ${proiz},  a/b = ${chasnoe}`);
+        </script>
+        <p><b>Сумма в квадрате:</b></p>
+        <script>
+            if (sum > 1 ) {
+            document.write (kvad);
+            }
+        </script>
+
+<h3>Задание 6</h3>
+<p>Если переменная <b>a</b> (из задания 5) больше <b>2</b> и меньше <b>11</b>, или переменная <b>b</b> (из задания 5) больше или равна <b>6</b> и меньше <b>14</b>, то выведите <b>'Верно'</b>, в противном случае выведите <b>'Неверно'</b>.</p>
+    <p><b>Ответ:</b></p>
+        <script>
+            if (a > 2 && a < 11 || b >= 6 && b < 14) {
+            document.write ('Верно');
+            } else {
+            document.write ('Неверно');
+            }
+        </script>
+
+<h3>Задание 7</h3>
+<p>В переменной n лежит число от <b>0</b> до <b>59</b>. Определите в какую четверть часа попадает это число (в первую, вторую, третью или четвертую).</p>
+<p><b>Ответ:</b></p>
+<script>
+    const n = prompt('Введите число от 0 до 59','37')
+if (n > 0 && n <= 15) {
+    document.write ('Это первая четверть часа');
+} else if (n >= 16 && n < 30) {
+    document.write ('Это вторая четверть часа');
+} else if (n >= 31 && n < 45) {
+    document.write ('Это третья четверть часа');
+} else {
+    document.write ('Это четвертая четверть часа');
+};
+</script>
+
+<h3>Задание 8</h3>
+<p>В переменной <b>day</b> лежит число из интервала от <b>1</b> до <b>31</b>. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).</p>
+<p><b>Ответ:</b></p>
+<script>
+    const day = prompt('Введите число от 1 до 31','12')
+    if (day > 0 && day <= 10) {
+    document.write ('Сейчас 1-я декада месяца');
+    } else if (day >= 11 && day <= 20) {
+    document.write ('Сейчас 2-я декада месяца');
+    } else {
+    document.write ('Сейчас 3-я декада месяца');
+    };
+</script>
+
+<h3>Задание 9</h3>
+<p>Напишите скрипт, который переводит дни в года (условно <b>1г = 365дн</b> ), в месяц (условно <b>1м = 31день</b> ), в недели, в часы, в минуты и в секунды. Дробные результаты вычислений принимаются. Если кол-ва дней не хватает до полного года, месяца, недели, вывести сообщение «Меньше года», «Меньше месяца» и «Меньше недели», соответственно.</p>
+<p><b>Ответ:</b></p>
+<script>   
+    /*
+1 m = 60 s
+1 h = 60 m = 60*60 s
+1 d = 24 h = 24*60 m = 24*60*60 s
+1 w = 7 d =  24*7 h = 7*24*60 m = 7*24*60*60 s
+1 mon = 4 w = 31 d = 31*24*60 m = 31*24*60*60 s
+1 y = 12 mon = 365 d = 365*24*60 m = 365*24*60*60 s
+*/
+const days = prompt('Введите кол-во дней, а я посчитаю сколько это лет, месяцев, недель, часов, секунд','256') 
+let years = ( days / 365 );
+let month = ( days / 31 );
+let weeks = ( days / 7 );
+let hours = ( days * 24 );
+let min = ( days * 24 * 60 );
+let sec = ( days * 24 * 60 * 60 );
+
+        if (years < 1 ) 
+            years = 'Меньше'; 
+        if (month < 1) 
+            month = 'Меньше'; 
+        if (weeks < 1)
+            weeks = 'Меньше';
+
+    document.write(`${days} дней составляет: ${years} года/лет, ${month} месяцев/а, ${weeks} недель/и, ${hours} часов, ${min} минут, ${sec} секунд`);
+</script>
+
+<h3>Задание 10</h3>
+<p>Напишите скрипт, который по введенному дню (исп. значение переменной из 8 задания) в году (например, 256) определит месяц (от 1 до 12) и пору года (зима лето и т.д.). Скрипт определение поры года написать через switch.</p>
+<p><b>Ответ:</b></p>
+<script>
+        if (month > 12) {
+            month = (month - Math.round(month/12) * 12)     
+        } 
+        if (month <= 1) {
+            month = ('Январь');
+        } else if (month > 1 && month <= 2) {
+            month = ('Февраль');
+        } else if (month > 2 && month <= 3) {
+            month = ('Март');
+        } else if (month > 3 && month <= 4) {
+            month = ('Апрель');
+        } else if (month > 4 && month <= 5) {
+            month = ('Май');
+        } else if (month > 5 && month <= 6) {
+            month = ('Июнь');
+        } else if (month > 6 && month <= 7) {
+            month = ('Июль');
+        } else if (month > 7 && month <= 8) {
+            month = ('Август');
+        } else if (month > 8 && month <= 9) {
+            month = ('Сентябрь');
+        } else if (month > 9 && month <= 10) {
+            month = ('Октябрь');
+        } else if (month > 10 && month <= 11) {
+            month = ('Ноябрь');
+        } else if (month > 11 && month <= 12) {
+            month = ('Декабрь');
+        } 
+        document.write (`Это ${month}`);
+</script>
+<p><b>Ответ:</b></p>
+<script>
+    
+    let result;
+    switch (month) {
+        case 'Январь':
+        case 'Февраль':
+        case 'Декабрь':
+        result = 'Зима';
+            break;
+        case 'Март':
+        case 'Апрель':
+        case 'Май':
+        result = 'Весна';
+            break;
+        case 'Июнь':
+        case 'Июль':
+        case 'Август':
+        result = 'Лето';
+            break;
+        case 'Сентябрь':
+        case 'Октябрь':
+        case 'Ноябрь':
+        result = 'Осень';
+            break;
+        default:
+            res = "Нет такого месяца!";
+    }
+    document.write(result);
+</script>
+</div>
+</body>
+</html>
